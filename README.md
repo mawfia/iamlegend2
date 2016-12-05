@@ -18,19 +18,21 @@ Homepage gives the above storyline.  Click the button labeled "enter" near the l
 
 TECHNOLOGY USED:
 -----------------
-1.  All back-end logic and data storage was executed using Java.
+1.  All back-end logic and data storage was executed using Java, JPA, and MySQL.
 
-2.  Search and sort features were implemented using Java8 Lambda Expressions.
+2.  Search and sort features were implemented using Java8 Lambda Expressions and JPA.
 
 3.  Maven was used to manage the libraries for XML dependencies.
 
-4.  Front-end operations such as regular expressions for exception prevention and dynamically populated fields and drop-down lists were implemented using HTML5 and CSS.
+4.  Bootstrap was used for front-end design and operations such as regular expressions for exception prevention and dynamically populated fields and drop-down lists were implemented using HTML5 and CSS.
 
-5.  Apache Tomcat is used as the server for execution and JSP and JSPTL handle client requests.
+5.  Spring Validation was used for form filtering and account creation.
 
-6.  Spring/MVC is the framework used for dynamic management of objects.
+6.  Apache Tomcat is used as the server for execution and JSP, JSPTL, and JavaScript handle server/client requests.
 
-7.  The application is deployed on a AWS account for cloud services.
+7.  Spring/MVC is the framework used for dynamic management of objects with Spring Entity Manager.
+
+8.  The application is deployed on a AWS account for cloud services.
 
 This web application may be viewed at: http://mawfia.com:8080/iamlegend2/
 
