@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+	
+		background-repeat: no-repeat;
+		background-image: url('/iamlegend2/images/stonewall9.jpg');
+	
+}
+
+.background {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('/iamlegend2/images/background10.jpg');
+}
+
+text-row{
+	margin-top: 30%;
+	margin-bottom: 30%;
+
+}
+
+.center{
+	align: center;
+	padding: 10%;
+	background-color: white;
+	opacity: 0.6;
+	text-align:center;
+}
+
+a{
+	position: center;
+}
+
+h1{
+	color: white;
+}
