@@ -14,7 +14,6 @@
 	    <class>entities.Customer</class>
 	      <class>entities.Cart</class>
 	        <class>entities.Equipment</class>
-	        
 	      
 	    
 	  

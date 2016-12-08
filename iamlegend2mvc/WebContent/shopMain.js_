@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Test Main Store Page</title>
+
+        <!-- Example assets -->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <h1>Test Main Page</h1>
+
+            <p>This will be the replacement display for the main store front</p>
+
+            <!--
+            Mutual wrapper, encloses the carousel and the plugin elements to
+            enable auto-detection of the carousel for the plugins.
+            -->
+            <div class="jcarousel-wrapper">
+
+                <!-- Carousel -->
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="#"><img src="images/weapon/0.jpg" width="600" height="400" alt=""></a></li>
+                        <li><img src="images/weapon/1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="images/weapon/2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="images/weapon/3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="images/weapon/4.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="images/weapon/5.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+                <!-- Prev/next controls -->
+                <a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
+                <a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+
+                <!-- Pagination -->
+                <p class="jcarousel-pagination">
+                    <!-- Pagination items will be generated in here -->
+                </p>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -30,5 +30,7 @@
 	<bean id="cart" class="entities.Cart" />
 	<bean id="customers" class="data.AuthenticationDAOI" />
 	<bean id="inventory" class="data.InventoryDAOI" />
+<!-- 	<bean id="FilterAccounts" class="data.FilterAccounts" /> -->
+<!-- 	<bean id="AuthenticationDAOI" class="data.AuthenticationDAOI" /> -->
 	
 </beans>

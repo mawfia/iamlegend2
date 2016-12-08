@@ -165,15 +165,14 @@ public class InventoryDAOI implements InventoryDAO{
 		case 1039: weapon.setAmmunition((Ammunition)inventory.get(4011)); ((Ammunition)inventory.get(4011)).setWeapon(weapon); ((Optic)inventory.get(5005)).setWeapon(weapon); break;
 		case 1040: weapon.setAmmunition((Ammunition)inventory.get(4004)); ((Ammunition)inventory.get(4004)).setWeapon(weapon); ((Optic)inventory.get(5006)).setWeapon(weapon); break;
 		case 1041: weapon.setAmmunition((Ammunition)inventory.get(4004)); ((Ammunition)inventory.get(4004)).setWeapon(weapon); ((Optic)inventory.get(5003)).setWeapon(weapon); break;
-		case 1042: weapon.setAmmunition((Ammunition)inventory.get(4003)); ((Ammunition)inventory.get(4003)).setWeapon(weapon); break;
-		case 1043: weapon.setAmmunition((Ammunition)inventory.get(4003)); ((Ammunition)inventory.get(4003)).setWeapon(weapon); break;
-		case 1044: weapon.setAmmunition((Ammunition)inventory.get(4003)); ((Ammunition)inventory.get(4003)).setWeapon(weapon); break;
-		case 1045: weapon.setAmmunition((Ammunition)inventory.get(4012)); ((Ammunition)inventory.get(4012)).setWeapon(weapon); break;
+		case 1042: 
+		case 1043: 
+		case 1044: 
+		case 1045:
 		case 1046: weapon.setAmmunition((Ammunition)inventory.get(4012)); ((Ammunition)inventory.get(4012)).setWeapon(weapon); break;
 		default: break;
 		}
 		
-		System.out.println( weapon.getId()+ " "+ weapon.getAmmunition());
 	}
 	
 	public void mapAmmunition(Weapon weapon, Integer ammunition){

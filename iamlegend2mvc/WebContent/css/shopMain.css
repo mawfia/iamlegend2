@@ -10,8 +10,14 @@
 /* 	background-image: url('/iamlegend2/images/background9.png'); */
 /* } */
 
+.addToCart{
+	width: 200px;
+	height: 200px;
+}
 
-
+.img{
+	text-align:center;
+}
 
 table{
 /*     border: 1px solid black; */
@@ -25,26 +31,26 @@ th, td {
     height: 50px;
 }
 
-img{
+.d1{
 	display: block;
-	margin: left;
+	margin: center;
 	width: 20%;
-	height: 20;
+	height: 20%;
 }
 
-.weapons-center{
-	margin-top: 20%;
-	margin-bottom: 20%;
-	margin-left: 0%;
-	margin-right: 10%;
-	padding: 20%;
-	background-color: gray;
-	opacity: 0.6;
-	border: 1px;
-	align: center;
+/* .weapons-center{ */
+/* 	margin-top: 20%; */
+/* 	margin-bottom: 20%; */
+/* 	margin-left: 0%; */
+/* 	margin-right: 10%; */
+/* 	padding: 20%; */
+/* 	background-color: gray; */
+/* 	opacity: 0.6; */
+/* 	border: 1px; */
+/* 	align: center; */
 	
 
-}
+/* } */
 
 
 .form-horizontal{

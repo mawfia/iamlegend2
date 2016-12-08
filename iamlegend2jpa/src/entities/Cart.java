@@ -98,7 +98,6 @@ public class Cart implements Comparable<Cart>{
 	public Integer removeItem(Item item){
 		if(item == null || !cart.contains(item)) return null;
 		else{
-				if(cart.size() == 0) return null;
 				for(Item i : cart) 
 					if(i.id == item.id && i.quantity > 1) return --i.quantity;
 					else if(!cart.remove(item)) return null;

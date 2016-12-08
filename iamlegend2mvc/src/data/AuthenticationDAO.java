@@ -4,6 +4,10 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 import entities.Customer;
 import entities.Customer;
 
@@ -30,6 +34,7 @@ public interface AuthenticationDAO {
 	public Map<Integer, Customer> JPQLQuery();
 	public Map<Integer, Customer> synchronizeDatabase();
 	boolean removeAccount(Customer customer);
+	public UserDetails loadUserByUsername(String arg0) throws UsernameNotFoundException;
 	public Integer index(Integer accountNumber);
 	public int size();
 }

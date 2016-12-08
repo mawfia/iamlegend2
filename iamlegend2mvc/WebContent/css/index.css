@@ -1,37 +1,52 @@
-@CHARSET "ISO-8859-1";
+/* @CHARSET "ISO-8859-1"; */
 
 
-body {
+
+/* body { */
 	
-		background-repeat: no-repeat;
-		background-image: url('/iamlegend2/images/stonewall9.jpg');
+/*  		background-repeat: no-repeat; */ 
+/* 		background-image: url('/iamlegend2/images/stonewall9.jpg'); */
+/* 		background-position: center; */
 	
+/* } */
+
+.stonewall-image {
+    background: url('../images/stonewall9.jpg') no-repeat center center fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+/*      margin: 0; */
+/* 	background-size: 1920px 1200px; */
 }
 
 .background {
+	border-radius: 25px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url('/iamlegend2/images/background10.jpg');
 }
 
-text-row{
-	margin-top: 30%;
-	margin-bottom: 30%;
-
+h1{
+	color: white;
+	text-align: center;
+	font: 30px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.center{
-	align: center;
+
+/* text-row{ */
+/* 	margin-top: 40%; */
+/* 	margin-bottom: 40%; */
+
+/* } */
+
+.text{
+	margin-top: 10%;
+	margin-bottom:10%;
 	padding: 10%;
 	background-color: white;
 	opacity: 0.6;
 	text-align:center;
 }
 
-a{
-	position: center;
-}
-
-h1{
-	color: white;
-}

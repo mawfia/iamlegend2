@@ -26,6 +26,10 @@ import entities.UserAccessLevel;
 import entities.Cart;
 import entities.Customer;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,7 +37,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 //@Service("userDetailsService")
 @Transactional
-public class AuthenticationDAOI implements AuthenticationDAO{
+public class AuthenticationDAOI implements AuthenticationDAO, UserDetails{
 	Map<Integer, Customer> customers = new HashMap<Integer, Customer>();
 
 
@@ -325,6 +329,61 @@ public class AuthenticationDAOI implements AuthenticationDAO{
 		//for(String g : geoData) System.out.println(g);}
 	
 		return geoData;
+	}
+
+	@Override
+	public Collection<GrantedAuthority> getAuthorities() {
+		final Set<GrantedAuthority> grntdAuths = new HashSet<GrantedAuthority>();
+		
+		for(Customer c: customers.values()) 
+			if(c.getAccessLevel() == UserAccessLevel.ADMIN) grntdAuths.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+			else if(c.getAccessLevel() == UserAccessLevel.BASIC) grntdAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
+			else if(c.getAccessLevel() == UserAccessLevel.GUEST) grntdAuths.add(new SimpleGrantedAuthority("ROLE_ANONYMOUS"));
+		
+		return grntdAuths;
+	}
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String arg0) throws UsernameNotFoundException {
+		int key = Integer.parseInt(arg0);
+		
+		return null;
 	}
 	
 }

@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="css/shopMain.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/shopMain.css">
+
 </head>
 <body class="container-fluid">
 	
@@ -27,8 +29,8 @@
 	<legend>View Item</legend>
 	<c:choose>
 		<c:when test="${ empty key }">
-			<img src="${inventory.get(keyList[0]).image}"/>
-			<table class="t1">
+			<img class="d1" src="${inventory.get(keyList[0]).image}"/>
+			<table >
 			<thead><tr><th >Actions:</th><th>Category:</th><th>Name:</th><th>Weight:</th><th>Price:</th><th>Quantity Remaining:</th></thead>
 			<tr>
 				<td><a href="adminShop.do?acct=${inventory.get(keyList[0]).id}&operation=1">Update</a>
@@ -46,7 +48,7 @@
     		</table>
     	</c:when>
     	<c:otherwise>
-    		<img src="${inventory.get(key).image}"/>
+    		<img class="d1" src="${inventory.get(key).image}"/>
 			<table>
 			<thead><tr><th >Actions:</th><th>Category:</th><th>Name:</th><th>Weight:</th><th>Price:</th><th>Quantity Remaining:</th></thead>
 			<tr>
@@ -187,8 +189,10 @@ $(document).ready(function(){
 
 <%-- 			</c:when> --%>
 <%-- 			<c:otherwise>  --%>
-
+		<div class="container-fluid">
+		<div class="row">
 			<c:forEach var="items" items="${inventory.values()}">
+			 <div class="col-md-4 product">
 			<div class="img">
   			<a target="#" href=""><img src="${items.image}" alt="This is a test" width="300" height="200"></a>
 			<table>
@@ -217,7 +221,18 @@ $(document).ready(function(){
 			</table>
   					<div class="desc">Description: None.</div>
 				</div>
+				</div>
 			</c:forEach>
+			</div>
+<!-- 			<div class="row"> -->
+			
+			
+			</div>
+<!-- 			<div class="row"> -->
+			
+			
+<!-- 			</div> -->
+<!-- 			</div> -->
 <%-- 			</c:otherwise> --%>
 <%-- 		</c:choose> --%>
 		

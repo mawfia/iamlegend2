@@ -1,29 +1,36 @@
 @CHARSET "ISO-8859-1";
 body {
-		background-image: url('/iamlegend2/images/stonewall3.jpg');
-	
+/* 		background-image: url('/iamlegend2/images/stonewall3.jpg'); */
+		background: url('/iamlegend2/images/stonewall3.jpg') no-repeat center center fixed;
+    	background-position: center;
+    	-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	background-size: cover;
+    	-o-background-size: cover;
 }
 
 .background {
+	border-radius: 25px;	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url('/iamlegend2/images/background1.jpg');
 }
 
-.login-row{
-	margin-top: 30%;
-	margin-bottom: 30%;
-/* 	margin-right: 5%; */
-/* 	margin-left: 5%; */
+h1{
+	text-align: center;
+	color: white;
+}
+
+.top{
+	opacity: 0.0;
 }
 
 
-.form-horizontal{
-	padding: 5%;
+fieldset{
 	background-color: white;
 	opacity: 0.6;
 }
 	
-h1{
-	align: center;
+.bottom{
+	
 }
