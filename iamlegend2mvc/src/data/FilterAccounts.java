@@ -76,9 +76,7 @@ public class FilterAccounts extends AuthenticationDAOI{
 		
 		List<Customer> tempList = new ArrayList<>();
 		
-		for (Customer customer : customers)
-			if (predicate.test(customer))
-				tempList.add(customer);
+		for (Customer customer : customers) if (predicate.test(customer)) tempList.add(customer);
 		
 		return tempList;
 	}

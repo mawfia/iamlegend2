@@ -12,19 +12,19 @@
 		<meta name="description" content="Dynamic Web Application: I Am Legend 2 Home Page">
     	<meta name="author" content="Michael Andrew Williams">
 	<!-- <meta http-equiv="refresh" content="1;refresh.do"> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css.map" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css.map" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" ></script>
+    	<script type="text/javascript" src="/js/bootstrap.min.js" ></script>
 		<title>I Am Legend 3</title>
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.css.map" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
-			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css.map" />
-			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-			<link rel="stylesheet" type="text/css" href="css/index.css" />
-			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
-    		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" ></script>
-    		<script type="text/javascript" src="/js/bootstrap.min.js" ></script>
 	</head>
 	<body class="stonewall-image" >
 		<div class="container-fluid">

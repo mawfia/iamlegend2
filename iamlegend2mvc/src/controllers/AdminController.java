@@ -90,14 +90,13 @@ public class AdminController {
 				 case 1: mv.addObject("admin", admin); mv.addObject("customer",  customer = customers.get(acct)); mv.setViewName("adminProfile.jsp"); return mv;
 				 case 2: mv.addObject("register", "adminRegister.do"); mv.addObject("user", admin.getAccountNumber()); mv.setViewName("register.jsp"); mv.addObject("customer", new Customer()); return mv;
 				 case 3: customers.removeAccount(customers.get(acct)); break;
-				 case 4: filteredAccts = new FilterAccounts(4, null, customers, null); break;
-				 case 5: filteredAccts = new FilterAccounts(5, null, customers, null); break;
-				 case 6: filteredAccts = new FilterAccounts(6, null, customers, null); break;
-				 case 7: filteredAccts = new FilterAccounts(7, null, customers, null); break;
-				default: break;
-								
+				 case 4: filteredAccts = new FilterAccounts(4, null, customers, null); mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList()); break;
+				 case 5: filteredAccts = new FilterAccounts(5, null, customers, null); mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList()); break;
+				 case 6: filteredAccts = new FilterAccounts(6, null, customers, null); mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList()); break;
+				 case 7: filteredAccts = new FilterAccounts(7, null, customers, null); mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList()); break;
+				default: break;		
 			 }
-			 mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList());
+			 
 		 }
 		 else if (search != null)
 		 {
@@ -111,6 +110,7 @@ public class AdminController {
 			 if(input7 != null && input7) filteredAccts = new FilterAccounts(14, search, customers, filteredAccts);
 			 if(input8 != null && input8) filteredAccts = new FilterAccounts(15, search, customers, filteredAccts);
 			 if(input9 != null && input9) filteredAccts = new FilterAccounts(16, search, customers, filteredAccts);
+			 mv.addObject("filteredAccts", filteredAccts.customers());  mv.addObject("AcctsKeyList", filteredAccts.keyList());
 		 }
 		else if(select != null && select.length() > 0) mv.addObject("key", Integer.parseInt(select));
 		

@@ -42,7 +42,7 @@
 								<form:form action="login.do" method="POST" modelAttribute="customer" class="form-horizontal">
 									<form:label path="email" class="col-sm-offset-0">Email:</form:label>
 									<form:input path="email" class="form-control" type="email" placeholder="Enter email" size="40" />
-									<form:errors path="email" />
+									<form:errors path="email" /><br />
 									<form:label path="password" class="col-sm-offset-0">Password:</form:label>
 									<form:input path="password" class="form-control" type="password" placeholder="Enter password"/>
 									<form:errors path="password" />
@@ -55,9 +55,10 @@
     											<div class="col-sm-2"><button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       												Shop As Guest</button>
     										 		<ul class="dropdown-menu">
-      													<li><a href="shopMain.do">Shop Main</a></li>
-      													<li><a href="shopWeapons.do">Shop Weapons</a></li>
-      													<li><a href="shopFood.do">Shop Food</a></li>
+      													<li><a href="#">Shop Main</a></li>
+      													<li><a href="#">Shop Weapons</a></li>
+      													<li><a href="#">Shop Food</a></li>
+      													<li><a href="#">Shop Equipment</a></li>
     												</ul>
     											</div>
   											</div>

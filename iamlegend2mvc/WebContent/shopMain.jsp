@@ -72,7 +72,7 @@
 		<datalist id="json-datalist"> 
 			<c:forEach var="item" items="${inventory.values()}">
 
-				<option value="${item.id}">${item.name} ${item.MSRP}</option>
+				<option value="${item.id}">${item.name} $${item.MSRP}</option>
 			</c:forEach> 
 		</datalist>
 		<button name="navigation" value="-1">Previous</button>
